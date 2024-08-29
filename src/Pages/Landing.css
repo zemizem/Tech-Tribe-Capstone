@@ -1,6 +1,6 @@
 .navbar {
   background-color: #cc6600;
-  height: 80px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,36 +12,34 @@
 .navbar_container {
   display: flex;
   justify-content: space-between;
-  height: 80px;
   z-index: 1;
   width: 100%;
+  height: 0;
   max-width: 1300px;
-  margin: 0 auto;
   padding: 0 50px;
 }
 
-#navbar_logo {
-  margin-bottom: 25px;
-  display: flex;
-}
+
 
 .navbar_menu {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   list-style: none;
-  text-align: center;
+  margin-left: auto;
   font-size: 20px;
+  position: relative;
 }
+
 .navbar1_link {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   font-family:Arial, Helvetica, sans-serif;
   text-decoration: none;
   padding: 20px;
-  height: 100%;
+  height: 80%;
   color: #fff;
   white-space: nowrap;
+  align-items: flex-start;
 }
 .navbar1_link:hover {
   color: #000000;
@@ -63,12 +61,15 @@
 .right-content {
   flex: 1;
   padding: 20px;
+  
 }
 
 .right-content img {
   max-width: 100%; 
   height: auto; 
-  display: block; }
+  display: block; 
+  margin-bottom: 50px;
+}
 
 .main-heading {
   font-size: 48px;

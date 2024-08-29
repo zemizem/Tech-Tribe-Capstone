@@ -18,7 +18,7 @@ function LogIn () {
                     <input type="password" id="password" name="password" required />
                 </div>
                 <button type="submit">
-                <a href="/Profile" id='login_link'>Login</a>
+                <a href="/Home" id='login_link'>Login</a>
                 </button>
                 
             </form>

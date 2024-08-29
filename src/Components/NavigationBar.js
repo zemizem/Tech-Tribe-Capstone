@@ -25,7 +25,7 @@ function NavigationBar() {
  return (
   <>
       <div className="navbar1" id= 'navbar_about1'>
-         <h1>ConnectPro</h1>   
+         <h1><a href="Home" className='logo'>ConnectPro</a></h1>   
       <div className={`navbar_toggle1 ${isMenuActive ? 'is-active' : ''}`} id="mobile_menu1">
                   <span className="bar"></span>
                   <span className="bar"></span>
@@ -50,7 +50,7 @@ function NavigationBar() {
                         <li className="navbar_items">
                            <a href="Employer" className="navbar_links">Employers</a>
                            </li>
-                       
+                        
                         
                {/*} <li className='search_bar'>
                            <div className="search">

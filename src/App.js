@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Pages/Home';
 import LogIn from './Pages/LogIn';
 import SignUp from './Pages/SignUp';
@@ -13,6 +14,7 @@ import News from './Pages/News';
 import JobSearch from './Pages/JobSearch';
 import Profile from './Pages/Profile';
 import Inbox from './Pages/Inbox';
+
 
 function App() {
   return (
@@ -31,7 +33,7 @@ function App() {
         <Route path='News' element={<News/>} />
         <Route path='Search' element={<JobSearch/>} />
         <Route path='Profile' element={<Profile/>} />
-        <Route path='Inbox' element={<Inbox/>} />
+        <Route path='Inbox' element={<Inbox/>} />        
       </Routes> 
    </BrowserRouter>
    </>      

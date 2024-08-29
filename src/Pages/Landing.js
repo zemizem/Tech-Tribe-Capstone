@@ -1,7 +1,6 @@
 import React, {useState, useEffect, useCallback} from 'react';
 import './Landing.css';
 import homepage from '../Images/homepage_image.jpg';
-import logo from '../Images/logo.JPG';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faInstagram, faFacebook, faTiktok, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
@@ -32,7 +31,6 @@ function Body (){
     <>
       <nav className="navbar">
         <div className="navbar_container" id= 'navbar'>
-              <img src={logo} alt="navbar_logo"/>
         <div className={`navbar_toggle ${isMenuActive ? 'is-active' : ''}`} id="mobile_menu">
               <span className="bar"></span>
               <span className="bar"></span>
