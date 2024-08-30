@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route,} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Pages/Home';
 import LogIn from './Pages/LogIn';
@@ -21,19 +21,19 @@ function App() {
    <>
    <BrowserRouter>
       <Routes>
-      <Route index element={<Landing/>}></Route>
-        <Route path='/Home' element={<Home/>} />
-        <Route path='LogIn' element={<LogIn/>} />
-        <Route path='SignUp' element={<SignUp/>} />
-        <Route path='/About' element={<About />} />
-        <Route path='ContactUs' element= {<ContactUs/>} />
-        <Route path='Billing' element={<Billing/>} />
-        <Route path='Employer' element={<Employer />} />
-        <Route path='/' element={<Landing />} />
-        <Route path='News' element={<News/>} />
-        <Route path='Search' element={<JobSearch/>} />
-        <Route path='Profile' element={<Profile/>} />
-        <Route path='Inbox' element={<Inbox/>} />        
+        <Route index element={<Landing/>}></Route>
+          <Route path='/Home' element={<Home/>} />
+          <Route path='LogIn' element={<LogIn/>} />
+          <Route path='SignUp' element={<SignUp/>} />
+          <Route path='/About' element={<About />} />
+          <Route path='ContactUs' element= {<ContactUs/>} />
+          <Route path='Billing' element={<Billing/>} />
+          <Route path='Employer' element={<Employer />} />
+          <Route path='/' element={<Landing />} />
+          <Route path='News' element={<News/>} />
+          <Route path='Search' element={<JobSearch/>} />
+          <Route path='Profile' element={<Profile/>} />
+          <Route path='Inbox' element={<Inbox/>} />     
       </Routes> 
    </BrowserRouter>
    </>      

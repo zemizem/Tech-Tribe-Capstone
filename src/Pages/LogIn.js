@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { useEffect} from 'react';
+import { useNavigate } from 'react-router-dom';
 import './LogIn.css';
 
-function LogIn () {
+const LogIn = () => {
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        
+        document.getElementById('username').value = 'testuser';
+        document.getElementById('password').value = 'testpassword';
+
+       
+        navigate('/Home');
+    }, [navigate]);
+
 
   return (
     <>
@@ -17,9 +29,7 @@ function LogIn () {
                     <label for="password">Password:</label>
                     <input type="password" id="password" name="password" required />
                 </div>
-                <button type="submit">
-                <a href="/Home" id='login_link'>Login</a>
-                </button>
+                <button type="button" onClick={() => navigate('/Home')}>Login</button>
                 
             </form>
         </div>
